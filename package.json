@@ -1,0 +1,27 @@
+{
+  "name": "getelementbyid",
+  "version": "1.0.0",
+  "description": "getElementById from any web page",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manzinello/getelementbyid.git"
+  },
+  "keywords": [
+    "getElementById",
+    "DOM",
+    "html"
+  ],
+  "bin": {
+    "getelementbyid": "./getelementbyid.js"
+  },
+  "author": "Matteo Manzinello",
+  "license": "MIT",
+  "dependencies": {
+    "dom-parser": "^0.1.5",
+    "request": "^2.83.0"
+  }
+}
