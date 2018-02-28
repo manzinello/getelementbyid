@@ -1,5 +1,7 @@
 # 🔑 url.getElementById(id)
 
+[![NPM](https://nodei.co/npm/getelementbyid.png?compact=true)](https://nodei.co/npm/getelementbyid/)
+
 ## !important
 this package is WIP!
 
