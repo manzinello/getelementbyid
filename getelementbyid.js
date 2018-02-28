@@ -22,5 +22,5 @@ g(url, id, callback);
 // Callback function
 function callback(v) {
     console.log(v);
-    if (v) console.log(INNER_HTML + v.innerHTML);
+    console.log(INNER_HTML + v.innerHTML);
 }
