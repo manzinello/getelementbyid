@@ -2,7 +2,7 @@
 
 const SPACE = " ";
 
-var getElementById = require('./lib/');
+var g = require('./lib/');
 
 // Prendo i parametri e shifto i valori per avere tutti i parametri eccetto i 2 iniziali
 var args = process.argv;
@@ -16,7 +16,7 @@ args.shift();
 // Tutti gli altri parametri sono l'id, spazi compresi
 var id = args.join(SPACE);
 
-getElementById(url, id, callback);
+g(url, id, callback);
 
 // Callback function
 function callback(v) {
