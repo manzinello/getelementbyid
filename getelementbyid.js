@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const SPACE = " ";
+const INNER_HTML = "innerHTML = ";
 
 var g = require('./lib/');
 
@@ -21,4 +22,5 @@ g(url, id, callback);
 // Callback function
 function callback(v) {
     console.log(v);
+    console.log(INNER_HTML + v.innerHTML);
 }
