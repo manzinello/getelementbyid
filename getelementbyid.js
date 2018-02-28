@@ -1,4 +1,24 @@
 #!/usr/bin/env node
 
-var getElementById = require('./lib/')
-console.log(getElementById());
+const SPACE = " ";
+
+var getElementById = require('./lib/');
+
+// Prendo i parametri e shifto i valori per avere tutti i parametri eccetto i 2 iniziali
+var args = process.argv;
+args.shift();
+args.shift();
+
+// Il primo parametro è l'URL
+var url = args[0];
+args.shift();
+
+// Tutti gli altri parametri sono l'id, spazi compresi
+var id = args.join(SPACE);
+
+getElementById(url, id, callback);
+
+// Callback function
+function callback(v) {
+    console.log(v);
+}
